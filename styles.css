@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, sans-serif;
+}
+
+body{
+    background: #171C31;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 75vh;
+    width: 45vh;
+    background: #1E2742;
+    border-radius: 16px;
+    box-shadow: 10px 10px #10142b; /* #161A2E */
+}
+
+.photo{
+    display: flex;
+}
+
+.hover{
+    width: 35vh;
+    height: 35vh;
+    border-radius: 12px;
+    position: absolute;
+    margin: 5vh;
+    background: #00FDF4;
+}
+
+.eye{
+    position: absolute;
+    margin: 20vh;
+    pointer-events: none;
+}
+
+.nft{
+    width: 35vh;
+    border-radius: 10px;
+    margin: 5vh;
+    position: relative;
+    cursor: pointer;
+}
+
+.nft:hover{
+    opacity: 0.4;
+    transition: 0.3s linear;
+}
+
+.nft:hover + .eye{
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.nft:not(:hover){
+    opacity: 1;
+    transition: 0.3s linear;
+}
+
+.nft:not(:hover) + .eye{
+    opacity: 0;
+    transition: 0.3s linear;
+}
+
+.txt{
+    height:18vh;
+    margin-bottom: 1vh;
+}
+
+hr{
+    width: 30vh;
+    height: 0.01vh;
+    margin-left: 7vh;
+    border:none;
+    background-color: #3a3f5a;
+}
+
+h1{
+    color:#F9FEFE;
+    font-size: 2.25vh;
+    margin-left: 3vh;
+}
+
+h1:hover{
+    color: #00FDF4;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.desc{
+    font-size: 2.1vh;
+    color: #7280A5;
+    margin: 2vh 3vh;
+}
+.infos{
+    height: 5vh;
+    display: flex;
+}
+
+.price-heading{
+    color: #00FDF4;
+    margin: 1vh 0;
+    margin-left: 3vh;
+    font-size: 2vh;
+    display: flex;
+}
+.eth{
+    width: 1.5vh;
+    margin-right: 1vh;
+}
+
+.price{
+    width: 20vh;
+    height: 5vh;
+    text-align: left;
+}
+
+.days{
+    width: 25vh;
+    height: 5vh;
+    text-align: right;
+    display: flex;
+    justify-content: right;
+}
+
+.days-heading{
+    color: #8EA0D6;
+    font-size: 2vh;
+    margin: 1vh 0;
+    display: flex;
+    margin-right: 3vh;
+}
+
+.time{
+    width: 3vh;
+    margin-right: 1vh;
+}
+
+.cred{
+    margin-top: 1vh;
+    height: 8vh;
+    display: flex;
+}
+
+.img-man{
+    width: 6.5vh;
+    height: 6.5vh;
+    display: flex;
+    background: #F9FEFE;
+    border-radius: 50%;
+    margin-top: 0.75vh;
+    margin-left: 3vh;
+
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-man img{ 
+    width: 6vh;
+    height: 6vh;
+    background:#F9FEFE;
+    border-radius: 50%;
+}
+
+.cred-man{
+    display: flex;
+    align-items: center;
+    margin-left: 2vh;
+}
+
+.cred-man p{
+    color: #7280A5;
+    font-size: 2vh;
+}
+
+.cred-man a{
+    color: #F9FEFE;
+    text-decoration: none;
+}
+
+.cred-man a:hover{
+    color: #00FDF4;
+    cursor: pointer;
+    transition: .3s linear;
+}
